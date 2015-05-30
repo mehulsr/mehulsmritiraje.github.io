@@ -1,0 +1,279 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <title>Luminary</title>
+
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=no">
+
+
+
+  <!--<script type="text/javascript" charset="utf-8" src="cordova.js"></script>-->
+
+  <!-- <link rel="import" href="components/font-roboto/roboto.html"> -->
+  <link rel="import" href="components/core-header-panel/core-header-panel.html">
+  <link rel="import" href="components/core-toolbar/core-toolbar.html">
+  <link rel="import" href="components/core-item/core-item.html">
+  <link rel="import" href="components/paper-tabs/paper-tabs.html">
+  <link rel="import" href="components/core-animated-pages/transitions/slide-from-right.html">
+  <link rel="import" href="components/paper-fab/paper-fab.html">
+  <link rel="import" href="components/paper-input/paper-input.html">
+  <link rel="import" href="components/paper-input/paper-autogrow-textarea.html">
+  <link rel="import" href="components/paper-input/paper-input-decorator.html">
+  <link rel="import" href="components/paper-checkbox/paper-checkbox.html">
+  <link rel="import" href="elements/post-list.html">
+
+  <link rel="import" href="components/core-icons/core-icons.html">
+  <link rel="import" href="components/paper-ripple/paper-ripple.html">
+  <link rel="import" href="components/paper-button/paper-button.html">
+  <link rel="import" href="components/paper-toggle-button/paper-toggle-button.html">
+
+  <link rel="stylesheet" href="css/all-style.css">
+
+</head>
+
+<body unresolved>
+
+  <core-header-panel mode="scroll" id="front">
+
+    <core-toolbar id="mainheader" animate-tall style="height:560px; background-image:url('header-panel-bg.png'); background-size: 100% 100%; ">
+
+      <span flex style="margin-top: 4em; font-size:1.8em; font-style:'Roboto'; font-weight: 100;">
+        <p>"Those who have the privilige to know, have a duty to act."</p>
+        <p>Albert Einstein</p>
+      </span>
+
+    </core-toolbar>
+
+    <paper-fab id="submit" src="img/arrow.png" aria-label="arrow" title="create" role="button"></paper-fab>
+
+  <div class="container" layout horizontal>
+
+    <div class="navbar" id="navbar" style="width:27.5%;">
+      <post-card style="width: auto;">
+        <div class="profile-pic" style="margin-bottom:10px; width:100%; "><img src="img/profile-pic.jpg" width=100px; height=100px; style="border: 1px solid black;margin:20px auto; display:block;"/></div>
+        <div class="list-item" id="home-link">Home</div>
+        <div class="list-item" id="proj-link">Projects</div>
+        <div class="list-item" id="pub-link">Publications</div>
+        <div class="list-item" id="pos-link">Positions of Responsibility</div>
+        <div class="list-item" id="wom-link">Empowering Girls</div>
+        <div class="list-item" id="blog-link"><a href="https://mehulsmritiraje.wordpress.com/">Blog</a></div>
+        <div class="list-item" id="con-link">Contact Me</div>
+      </post-card>
+    </div>
+
+    <div class="content-box" style="width:66.5%; margin-left:20px;">
+
+      <post-card id="home" style="font-size:16px;">
+        <p>
+          I'm a 3rd Year, B,E. Computer Science student of MIT Manipal.
+          I am a passionate coder, a voracious reader, an avid blogger and
+          occasionally like to surprise people with my guitaring and fashion skills!
+        </p>
+        <br>
+        <p>
+          Updates
+          <ul>
+            <li>Summer intern at SanDisk India Device Design Center</li>
+            <li>Launched Luminary Studios</li>
+            <li>Passed 'Entrepreneurship 101:Knowing Your Customers',offered by edX, with distinction
+            <li>Third prize in Code n Ladders</li>
+            <li>Conference select for Cisco Women's Day celebration</li>
+            <li>Summer intern at Indian Institute of Technology, Bombay</li>
+            <li>Bronze medal in Paper Presentation Competition, for paper on 'Semantic Search in a personal computer'</li>
+            <li>All India Rank 10 in Codathon</li>
+            <li>Awarded Merit-cum-Means scholarship by Manipal University</li>
+          </ul>
+        </p>
+      </post-card>
+
+      <post-card id="proj" style="display:none;">
+        <div class="project-details">
+          <div class="topic" style="width:100%">Email functionality for Rural IVRS</div>
+          <div class="desc">Part of summer internship att IIT Bombay.
+            An email functionality was developed as part of a Voice Response System to be used by farmers in Maharashtra.
+            Developed using HTML, CSS, JQuery, JSP and SQL database.
+          </div>
+        </div>
+        <div class="project-details">
+          <div class="topic" style="width:100%">ElasticSearch Indexing for an Application Classifier</div>
+          <div class="desc">Part of summer internship att IIT Bombay.
+            Indexed over 1 GG of textual data about mobile applications, using the ElasticSerach API.
+            Wrote script to automate the generation of JSON files.
+          </div>
+        </div>
+        <div class="project-details">
+          <div class="topic" style="width:100%">Dailython, an Android Application</div>
+          <div class="desc">This application aims to change daily tasks into challenges.
+            Users can set goals and rewards for themselves and even challenge their friends to complete their tasks.
+            Developed using Android SDK for clipse and Google Cloud database.
+          </div>
+        </div>
+        <div class="project-details">
+          <div class="topic" style="width:100%">Luminary, an Android Application</div>
+          <div class="desc">This application fecthes an inspirational quote, anecdote or story for the user, at a fixed time everyday.
+            The user can also submit tales that inspire them.
+            Developed using HTML, CSS, JQuery and Polymer and deployed on Android using Adobe PhoneGap.
+          </div>
+        </div>
+        <div class="project-details">
+          <div class="topic" style="width:100%">Bookstore Application</div>
+          <div class="desc">This application streamlines the traffic in a bookstore.
+            It maintains an inventory of all books for the user.
+            Users can check the latest arrivals, submit reviews and even get suggestions from popular websites.
+            The admin of the bookstore has a facility to manage the inventory and monitor the employee database.
+            Developed using Java and local MySQL database.
+          </div>
+        </div>
+        <div class="project-details">
+          <div class="topic" style="width:100%">Scoring Application</div>
+          <div class="desc">This application shows questions and maintains the scores of each team.
+            It was made for a team-based coding event.
+            Developed using Java and local MySQL database.
+          </div>
+        </div>
+      </post-card>
+
+      <post-card id="pub" style="display:none;">
+        <div class="project-details">
+          <div class="topic" style="width:100%">Information Retrieval in Personal Computers, based on Semantics of Query</div>
+          <div class="desc">The search tool developed searches for documents on a personal computer,
+            based on analysis of the query eneterd. The query is first processed using a set of common naming conventions observed.
+            The semantics of the keywords and the usage history is then used to fetch results.
+            Developed using C and C++.
+          </div>
+        </div>
+        <div class="project-details">
+          <div class="topic" style="width:100%">Lexical Analyser and Compiler using Sanskrit</div>
+          <div class="desc">This paper proposes the construction of a C-based compiler in Sanskrit language.
+            It demonstrates the construction of a lexical analyser for Sanskrit, that suggests correction to simple Sanskrit sentences.
+            The aim of this paper is to help everyone code, without any language barrier.
+            Developed using C and C++.
+          </div>
+        </div>
+      </post-card>
+
+      <post-card id="pos" style="display:none;">
+        <div class="project-details">
+          <div class="topic" style="width:100%">Started the Women Techmakers Manipal Community</div>
+          <div class="desc">
+            <ul>
+              <li>Conducted competitive coding and product development events </li>
+              <li>Started a CodeForces team for all female coders in Manipal </li>
+              <li>Launched Facebook group for girls to discuss algorithmic problems and project ideas.</li>
+              <li>Events attended by over 40 girls</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-details">
+          <div class="topic" style="width:100%">Vice President of IE CSE</div>
+          <div class="desc">
+            <ul>
+              <li>Conducted workshops on Object Oriented Programming and Game Development </li>
+              <li>Organised workshops on Data Structures, Web Development</li>
+              <li>Events attended by over 200 people</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-details">
+          <div class="topic" style="width:100%">Manager of GDG Manipal</div>
+          <div class="desc">
+            <ul>
+              <li>Conducted workshops on Android Development and Google Cloud </li>
+              <li>Organised workshops on Material Design and a Polymer Hackathon</li>
+              <li>Events attended by over 200 people</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-details">
+          <div class="topic" style="width:100%">Student Council of Notre Dame Academy</div>
+          <div class="desc">
+            <ul>
+              <li>Management and organisation of all school activities</li>
+              <li>Received special awards for academic excellence and leadership</li>
+            </ul>
+          </div>
+        </div>
+      </post-card>
+
+      <post-card id="wom" style="display:none;">
+        <div class="project-details">
+          <div class="topic" style="width:100%">Launched 'The Spectacular Female' Video Series</div>
+          <div class="desc">  This series aims to highlight the achievements and struggles faced by working women.
+            These women might seem ordinary, but are making a significantly positive impact on the society.
+          </div>
+        </div>
+      </post-card>
+
+      <!-- <post-card id="blog" style="display:none;">
+      </post-card> -->
+
+      <post-card id="con" style="display:none;">
+          <div id="c2" class="content">
+
+          <table style="margin:20px 0px;">
+            <tr>
+              <td style="font-size:20px;">Contact Info:</td>
+            </tr>
+            <tr>
+              <td><img src="img/email.png" width="48" height="48" alt="Email"></td>
+              <td>mehul.raje@gmail.com<br>mehul.smriti@learner.manipal.edu<br>msr@iecsemanipal.com</td>
+            </tr>
+            <tr>
+              <td><img src="img/stamp.png" width="48" height="48" alt="Email"></td>
+              <td>Block 13, MIT Hostels<br>Manipal Institute of Technology<br>Manipal - 576104<br>Karnataka</td>
+            </tr>
+          </table>
+
+          <table style="margin:20px 0px;">
+            <tr>
+              <td style="font-size:20px;">Profiles</td>
+            </tr>
+            <tr>
+              <td><a href="http://lnkd.in/bJybHkK"><img src="img/linkedin.png" width="48" height="48" alt="LinkedIn"></a></td>
+              <td><a href="http://lnkd.in/bJybHkK">LinkedIn 'Mehul Smriti Raje'</a></td>
+            </tr>
+            <tr>
+              <td><a href="http://www.codechef.com/users/mecoder16"><img src="img/codechef.jpeg" width="48" height="48" alt="CodeChef" /></a></td>
+              <td><a href="http://www.codechef.com/users/mecoder16">CodeChef 'mecoder16'</a></td>
+            </tr>
+            <tr>
+              <td><a href="https://github.com/mehulsr"><img src="img/github.png" width="48" height="48" alt="GitHub" /></a></td>
+              <td><a href="https://github.com/mehulsr">GitHub 'mehulsr'</a></td>
+            </tr>
+            <tr>
+              <td><a href="https://www.hackerrank.com/mehul_raje"><img src="img/hackerrank.png" width="48" height="48" alt="HackerRank" /></a></td>
+              <td><a href="https://www.hackerrank.com/mehul_raje">HackerRank 'mehul_raje'</a></td>
+            </tr>
+          </table>
+
+          <table style="margin:20px 0px;">
+            <tr>
+              <td style="font-size:20px;">Connect on:</td>
+              <td><a href="https://www.facebook.com/mehul.s.raje"><img src="img/facebook.png" width="48" height="48" alt="Facebook" /></a></td>
+              <td><a href="https://plus.google.com/105986479944112447499"><img src="img/googleplus.png" width="48" height="48" alt="Google+" /></a></td>
+              <td><a href="https://twitter.com/MSR163"><img src="img/twitter.png" width="48" height="48" alt="Twitter" /></a></td>
+              <td><a href="http://instagram.com/mehul16"><img src="img/instagram.png" width="48" height="48" alt="Instagram" /></a></td>
+            </tr>
+          </table>
+        </div>
+      </post-card>
+    </div>
+
+  </div>
+
+
+  <div id="footer" class="footer" style="background-color:white; height:auto; box-shadow:0px 0px 3px #AAAAAA;">
+      <div class="footer-note" style="padding:30px; text-align:center;">Copyright &copy; 2015 Mehul Smriti Raje. All rights reserved.</div>
+  </div>
+
+  <!-- </core-header-panel> -->
+  </div>
+
+  <script src='components/jquery/dist/jquery.min.js'></script>
+  <script src='components/jqueryui/jquery-ui.min.js'></script>
+  <script src="js/universal.js"></script> -->
+</body>
+
+</html>

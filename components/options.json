@@ -1,0 +1,24 @@
+[
+  {
+    "opid":1,
+    "opname":"About Motivate"
+    "text":"Get a motiation every day from someone on the globe :)"
+  },
+  {
+    "opid":2,
+    "opname":"Submit a Motivation"
+  },
+  {
+    "opid":3,
+    "opname":"Settings"
+  },
+  {
+    "opid":4,
+    "opname":"Share With Friends"
+  },
+  {
+    "opid":5,
+    "opname":"Developers",
+    "text":""
+  }
+]
