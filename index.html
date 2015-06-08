@@ -37,27 +37,31 @@
 
   <core-header-panel mode="scroll" id="front">
 
-    <core-toolbar id="mainheader" animate-tall style="height:560px; background-image:url('header-panel-bg.png'); background-size: 100% 100%; ">
+    <core-toolbar id="mainheader" animate-tall style="height:540px; width:1280px; background-color:#FFA00 background-size: 100% 100%; ">
+      <!-- background-image:url('img/bg.jpg');  -->
 
-      <span flex style="margin-top: 4em; font-size:1.8em; font-style:'Roboto'; font-weight: 100;">
-        <p>"Those who have the privilige to know, have a duty to act."</p>
-        <p>Albert Einstein</p>
+      <!-- font-size:1.8em;  font-weight: 100; -->
+      <span flex style="margin:2em; font-style:'RobotoDraft'; font-weight: lighter;">
+        www.mehulsmritiraje.com
+        <!-- <p>"Those who have the privilige to know, have a duty to act."</p> -->
+        <!-- <p>Albert Einstein</p> -->
       </span>
 
     </core-toolbar>
 
     <paper-fab id="submit" src="img/arrow.png" aria-label="arrow" title="create" role="button"></paper-fab>
+    <!-- <paper-fab icon="av:play-arrow" id="submit" title="create" role="button"></paper-fab> -->
 
   <div class="container" layout horizontal>
 
     <div class="navbar" id="navbar" style="width:27.5%;">
       <post-card style="width: auto;">
-        <div class="profile-pic" style="margin-bottom:10px; width:100%; "><img src="img/profile-pic.jpg" width=100px; height=100px; style="border: 1px solid black;margin:20px auto; display:block;"/></div>
+        <div class="profile-pic" style="width:100%; padding-top:10px;"><img src="img/profile-pic.jpg" width=100px; height=100px; style="border: 1px solid black;margin:20px auto; display:block;"/></div>
         <div class="list-item" id="home-link">Home</div>
         <div class="list-item" id="proj-link">Projects</div>
-        <div class="list-item" id="pub-link">Publications</div>
-        <div class="list-item" id="pos-link">Positions of Responsibility</div>
-        <div class="list-item" id="wom-link">Empowering Girls</div>
+        <!-- <div class="list-item" id="pub-link">Publications</div> -->
+        <div class="list-item" id="pos-link">Leadership</div>
+        <div class="list-item" id="wom-link">Women Empowerment</div>
         <div class="list-item" id="blog-link"><a href="https://mehulsmritiraje.wordpress.com/">Blog</a></div>
         <div class="list-item" id="con-link">Contact Me</div>
       </post-card>
@@ -65,30 +69,54 @@
 
     <div class="content-box" style="width:66.5%; margin-left:20px;">
 
-      <post-card id="home" style="font-size:16px;">
-        <p>
-          I'm a 3rd Year, B,E. Computer Science student of MIT Manipal.
-          I am a passionate coder, a voracious reader, an avid blogger and
-          occasionally like to surprise people with my guitaring and fashion skills!
+      <post-card id="home" style="font-size:16px; padding:10px;">
+        <p style="padding:10px 10px 0px 10px;">
+          I am Mehul Smriti Raje, a 3rd Year, B,E. Computer Science student of MIT Manipal.
+          I like Math and logic puzzles. I want to pursue the possibility of creating a logically-structured world,
+          devoid of its usual problems and with each individual equally empowered.
+          I am a strong supporter of female education and women empowerment.
         </p>
         <br>
         <p>
-          Updates
           <ul>
             <li>Summer intern at SanDisk India Device Design Center</li>
-            <li>Launched Luminary Studios</li>
-            <li>Passed 'Entrepreneurship 101:Knowing Your Customers',offered by edX, with distinction
-            <li>Third prize in Code n Ladders</li>
-            <li>Conference select for Cisco Women's Day celebration</li>
-            <li>Summer intern at Indian Institute of Technology, Bombay</li>
-            <li>Bronze medal in Paper Presentation Competition, for paper on 'Semantic Search in a personal computer'</li>
-            <li>All India Rank 10 in Codathon</li>
-            <li>Awarded Merit-cum-Means scholarship by Manipal University</li>
+            <li>
+              Launched TheSpectacularFemale video series, under Luminary Studios.
+              This series aims to promote female education and highlight the achievements of seemingly ordinary women, from all walks of life
+              <a href="https://www.youtube.com/channel/UCl1lKfN4o097mgGcgGZlnaA">
+                <img src="img/tsf.png" height=300px style="display:block; margin: 20px auto;">
+                </img>
+              </a>
+            </li>
+            <li>Founder of Women Techmakers Manipal
+              <img src="img/tsf.png" height=300px style="display:block; margin: 20px auto;">
+              </img>
+            </li>
+            <li>Summer intern at Indian Institute of Technology, Bombay
+              <img src="img/tsf.png" height=300px style="display:block; margin: 20px auto;">
+              </img>
+            </li>
+            <li>Vice President of Institute of Engineers Computer Science and Engineering, Manipal
+              <img src="img/tsf.png" height=300px style="display:block; margin: 20px auto;">
+              </img>
+            </li>
+            <li>Bronze medal in Paper Presentation Competition, for paper on 'Semantic Search in a personal computer'
+              <img src="img/tsf.png" height=300px style="display:block; margin: 20px auto;">
+              </img>
+            </li>
+            <li>All India Rank 10 in Codathon
+              <img src="img/tsf.png" height=300px style="display:block; margin: 20px auto;">
+              </img>
+            </li>
+            <li>Awarded Merit-cum-Means scholarship by Manipal University
+              <img src="img/prize.jpg" height=300px style="display:block; margin: 20px auto;">
+              </img>
+            </li>
           </ul>
         </p>
       </post-card>
 
-      <post-card id="proj" style="display:none;">
+      <post-card id="proj" style="display:none; padding:10px;">
         <div class="project-details">
           <div class="topic" style="width:100%">Email functionality for Rural IVRS</div>
           <div class="desc">Part of summer internship att IIT Bombay.
@@ -135,7 +163,7 @@
         </div>
       </post-card>
 
-      <post-card id="pub" style="display:none;">
+      <post-card id="pub" style="display:none; padding:10px;">
         <div class="project-details">
           <div class="topic" style="width:100%">Information Retrieval in Personal Computers, based on Semantics of Query</div>
           <div class="desc">The search tool developed searches for documents on a personal computer,
@@ -154,18 +182,8 @@
         </div>
       </post-card>
 
-      <post-card id="pos" style="display:none;">
-        <div class="project-details">
-          <div class="topic" style="width:100%">Started the Women Techmakers Manipal Community</div>
-          <div class="desc">
-            <ul>
-              <li>Conducted competitive coding and product development events </li>
-              <li>Started a CodeForces team for all female coders in Manipal </li>
-              <li>Launched Facebook group for girls to discuss algorithmic problems and project ideas.</li>
-              <li>Events attended by over 40 girls</li>
-            </ul>
-          </div>
-        </div>
+      <post-card id="pos" style="display:none; padding:10px;">
+
         <div class="project-details">
           <div class="topic" style="width:100%">Vice President of IE CSE</div>
           <div class="desc">
@@ -197,11 +215,34 @@
         </div>
       </post-card>
 
-      <post-card id="wom" style="display:none;">
+      <post-card id="wom" style="display:none; padding:10px;">
         <div class="project-details">
           <div class="topic" style="width:100%">Launched 'The Spectacular Female' Video Series</div>
           <div class="desc">  This series aims to highlight the achievements and struggles faced by working women.
             These women might seem ordinary, but are making a significantly positive impact on the society.
+          </div>
+        </div>
+        <div class="project-details">
+          <div class="topic" style="width:100%">Founder of Women Techmakers, Manipal</div>
+          <div class="desc">
+            <ul>
+              <li>Conducted competitive coding and product development events </li>
+              <li>Started a CodeForces team for all female coders in Manipal </li>
+              <li>Launched Facebook group for girls to discuss algorithmic problems and project ideas.</li>
+              <li>Events attended by over 40 girls</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-details">
+          <div class="topic" style="width:100%">Participant in the WTM International Video</div>
+          <div class="desc">
+            <embed width="540" height="300" src="http://www.youtube.com/embed/Yyp-FzWxngI">
+          </div>
+        </div>
+        <div class="project-details">
+          <div class="topic" style="width:100%">Participant in the WTM India Video</div>
+          <div class="desc">
+            <video height="300" controls><source src="movie.mp4" type="https://www.youtube.com/watch?v=Yyp-FzWxngI"></video>
           </div>
         </div>
       </post-card>
@@ -209,7 +250,7 @@
       <!-- <post-card id="blog" style="display:none;">
       </post-card> -->
 
-      <post-card id="con" style="display:none;">
+      <post-card id="con" style="display:none; padding:10px;">
           <div id="c2" class="content">
 
           <table style="margin:20px 0px;">
@@ -265,7 +306,7 @@
 
 
   <div id="footer" class="footer" style="background-color:white; height:auto; box-shadow:0px 0px 3px #AAAAAA;">
-      <div class="footer-note" style="padding:30px; text-align:center;">Copyright &copy; 2015 Mehul Smriti Raje. All rights reserved.</div>
+      <div class="footer-note" style="padding:30px; text-align:center; font-weight:lighter;">Copyright &copy; 2015 Mehul Smriti Raje. All rights reserved.</div>
   </div>
 
   <!-- </core-header-panel> -->

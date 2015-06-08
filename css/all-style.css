@@ -18,7 +18,7 @@ core-header-panel {
   backface-visibility: hidden;
 }
 core-toolbar {
-  background: #E91E63;
+  background: #303F9F;
   color: white;
   z-index:9999;
   box-shadow:0px 0px 3px #AAAAAA;
@@ -53,9 +53,9 @@ text-transform: uppercase;
 {
   position: fixed;
   bottom: 5%;
-  left: 0;
+  left: 90%;
   right: 0;
-  margin: auto;
+  /*margin: auto;*/
   z-index:9999;
   background: #FFA000;
 }
@@ -98,7 +98,7 @@ text-transform: uppercase;
 .list-item
 {
   height:auto;
-  padding: 10px;
+  padding: 10px 20px;
   vertical-align:middle;
   cursor: pointer; cursor: hand;
 }
