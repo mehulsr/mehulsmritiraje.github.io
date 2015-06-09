@@ -18,7 +18,7 @@ core-header-panel {
   backface-visibility: hidden;
 }
 core-toolbar {
-  background: #303F9F;
+  background: #212121;
   color: white;
   z-index:9999;
   box-shadow:0px 0px 3px #AAAAAA;
@@ -51,13 +51,12 @@ text-transform: uppercase;
 
 #submit
 {
-  position: fixed;
-  bottom: 5%;
-  left: 90%;
-  right: 0;
-  /*margin: auto;*/
+  position: absolute;
+  top: 10%;
+  margin-left: auto;
+  margin-right:auto;
   z-index:9999;
-  background: #FFA000;
+  /*background: #FFA000;*/
 }
 
 #submitname, #submitcountry,#submitstory{
@@ -116,4 +115,38 @@ text-transform: uppercase;
 .project-details
 {
   margin:20px;
+}
+
+.spaces
+{
+  width:16%;
+  text-align:center;
+  vertical-align:middle;
+  color:white;
+  font-size:14px;
+  font-weight:lighter;
+  padding-top:10px;
+}
+
+#home-link, #proj-link,#pos-link, #wom-link, #con-link, #blog-link
+{
+  cursor: pointer; cursor: hand;
+}
+
+.circular
+{
+  position:absolute;
+  top:7%;
+  left:0;
+  right:0;
+  margin:auto;
+  z-index:10;
+  width: 200px;
+  height: 200px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }

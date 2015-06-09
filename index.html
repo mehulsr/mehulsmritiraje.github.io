@@ -37,39 +37,75 @@
 
   <core-header-panel mode="scroll" id="front">
 
-    <core-toolbar id="mainheader" animate-tall style="height:540px; width:1280px; background-color:#FFA00 background-size: 100% 100%; ">
-      <!-- background-image:url('img/bg.jpg');  -->
-
-      <!-- font-size:1.8em;  font-weight: 100; -->
+    <!-- <core-toolbar id="mainheader" style="height:540px; width:1280px; background-color:#FFA00 background-size: 100% 100%; ">
       <span flex style="margin:2em; font-style:'RobotoDraft'; font-weight: lighter;">
         www.mehulsmritiraje.com
-        <!-- <p>"Those who have the privilige to know, have a duty to act."</p> -->
-        <!-- <p>Albert Einstein</p> -->
       </span>
+    </core-toolbar> -->
 
-    </core-toolbar>
+  <!-- <core-toolbar></core-toolbar> -->
 
-    <paper-fab id="submit" src="img/arrow.png" aria-label="arrow" title="create" role="button"></paper-fab>
+  <div class="top" style="background-color:#212121; width:100%; height: 540px;">
+    <!-- <paper-fab id="submit" src="img/profile-pic.jpg" aria-label="arrow" title="create" role="button"></paper-fab> -->
+
+    <div class="circular" style='background-image:url(profile-pic.jpg); background-repeat: no-repeat; background-size: cover;'></div>
+
+    <div class="menu" style="height:25%; width:100%; background-color:#212121; border:1px solid #212121;">
+      <!-- <post-card style="box-shadow:0px; background-color:#303F9F; width:90%; height:70%; margin:auto;">Hello world</post-card> -->
+    </div>
+    <div class="banner" style="height:50%; width:100%; border: 1px solid #212121;">
+      <post-card style="width:90%; height:90%; margin:auto; border: 1px sold #EEEEEE;">
+        <div class="empty" style="height:45%; width:100%;"></div>
+        <div class="name" style="padding:auto; height:20%; width:100%; font-size:42px; text-align:center; vertical-align:middle; font-weight:lighter;">Mehul  Smriti  Raje</div>
+        <div class="bottom" style="height:20%; text-align:center; width:50%; margin:auto;">
+          <p style="font-size:smaller; font-weight:bolder; color:#E91E63"> CODER. INNOVATOR. GEEK. DIFFERENT.</p>
+        </div>
+      </post-card>
+    </div>
+    <div class="menu" style="height:25%; width:100%; background-color:#212121; border:1px solid #212121;">
+      <!-- <post-card style="background-color:#303F9F; width:90%; height:70%; margin:auto;">Hello world</post-card> -->
+      <table style="margin:auto; vertical-align:middle; width: 80%;">
+        <tr>
+          <td class="spaces" id="home-link"><core-icon icon="home" style="color: #E91E63; width:30px; height: 30px;"/></td>
+          <td class="spaces" id="proj-link"><core-icon icon="group-work" style="color: #E91E63; width:30px; height: 30px;"/></td>
+          <td class="spaces" id="wom-link"><core-icon icon="account-child" style="color: #E91E63; width:30px; height: 30px;"/></td>
+          <td class="spaces" id="pos-link"><core-icon icon="work" style="color: #E91E63; width:30px; height: 30px;"/></td>
+          <td class="spaces" id="blog-link"><core-icon icon="book" style="color: #E91E63; width:30px; height: 30px;"/></td>
+          <td class="spaces" id="con-link"><core-icon icon="mail" style="color: #E91E63; width:30px; height: 30px;"/>></td>
+        </tr>
+        <tr>
+          <td class="spaces" style="padding-top:10px;">HOME</td>
+          <td class="spaces" style="padding-top:10px;">PROJECTS</td>
+          <td class="spaces" style="padding-top:10px;">WOMEN</td>
+          <td class="spaces" style="padding-top:10px;">WORK</td>
+          <td class="spaces" style="padding-top:10px;">BLOG</td>
+          <td class="spaces" style="padding-top:10px;">CONTACT</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+    <!-- <paper-fab id="submit" src="img/arrow.png" aria-label="arrow" title="create" role="button"></paper-fab> -->
     <!-- <paper-fab icon="av:play-arrow" id="submit" title="create" role="button"></paper-fab> -->
 
-  <div class="container" layout horizontal>
+  <div class="container" layout horizontal style="display:none;">
 
-    <div class="navbar" id="navbar" style="width:27.5%;">
+    <!-- <div class="navbar" id="navbar" style="width:27.5%;">
       <post-card style="width: auto;">
         <div class="profile-pic" style="width:100%; padding-top:10px;"><img src="img/profile-pic.jpg" width=100px; height=100px; style="border: 1px solid black;margin:20px auto; display:block;"/></div>
-        <div class="list-item" id="home-link">Home</div>
+        <div class="list-item" id="home-link" style="color:#FFA000;">Home</div>
         <div class="list-item" id="proj-link">Projects</div>
-        <!-- <div class="list-item" id="pub-link">Publications</div> -->
+        <div class="list-item" id="pub-link">Publications</div>
         <div class="list-item" id="pos-link">Leadership</div>
         <div class="list-item" id="wom-link">Women Empowerment</div>
         <div class="list-item" id="blog-link"><a href="https://mehulsmritiraje.wordpress.com/">Blog</a></div>
         <div class="list-item" id="con-link">Contact Me</div>
       </post-card>
-    </div>
+    </div> -->
 
-    <div class="content-box" style="width:66.5%; margin-left:20px;">
+    <div class="content-box" style="width:100%; margin: auto;">
 
-      <post-card id="home" style="font-size:16px; padding:10px;">
+      <post-card id="home" style="font-size:16px;">
         <p style="padding:10px 10px 0px 10px;">
           I am Mehul Smriti Raje, a 3rd Year, B,E. Computer Science student of MIT Manipal.
           I like Math and logic puzzles. I want to pursue the possibility of creating a logically-structured world,
@@ -89,11 +125,11 @@
               </a>
             </li>
             <li>Founder of Women Techmakers Manipal
-              <img src="img/tsf.png" height=300px style="display:block; margin: 20px auto;">
+              <img src="img/mehul-gdg.jpg" height=300px style="display:block; margin: 20px auto;">
               </img>
             </li>
             <li>Summer intern at Indian Institute of Technology, Bombay
-              <img src="img/tsf.png" height=300px style="display:block; margin: 20px auto;">
+              <img src="img/iitb.jpg" height=300px style="display:block; margin: 20px auto;">
               </img>
             </li>
             <li>Vice President of Institute of Engineers Computer Science and Engineering, Manipal
@@ -116,7 +152,7 @@
         </p>
       </post-card>
 
-      <post-card id="proj" style="display:none; padding:10px;">
+      <post-card id="proj" style="display:none;">
         <div class="project-details">
           <div class="topic" style="width:100%">Email functionality for Rural IVRS</div>
           <div class="desc">Part of summer internship att IIT Bombay.
@@ -129,6 +165,14 @@
           <div class="desc">Part of summer internship att IIT Bombay.
             Indexed over 1 GG of textual data about mobile applications, using the ElasticSerach API.
             Wrote script to automate the generation of JSON files.
+          </div>
+        </div>
+        <div class="project-details">
+          <div class="topic" style="width:100%">Information Retrieval in Personal Computers, based on Semantics of Query</div>
+          <div class="desc">The search tool developed searches for documents on a personal computer,
+            based on analysis of the query eneterd. The query is first processed using a set of common naming conventions observed.
+            The semantics of the keywords and the usage history is then used to fetch results.
+            Developed using C and C++.
           </div>
         </div>
         <div class="project-details">
@@ -163,7 +207,7 @@
         </div>
       </post-card>
 
-      <post-card id="pub" style="display:none; padding:10px;">
+      <post-card id="pub" style="display:none;">
         <div class="project-details">
           <div class="topic" style="width:100%">Information Retrieval in Personal Computers, based on Semantics of Query</div>
           <div class="desc">The search tool developed searches for documents on a personal computer,
@@ -182,7 +226,7 @@
         </div>
       </post-card>
 
-      <post-card id="pos" style="display:none; padding:10px;">
+      <post-card id="pos" style="display:none;">
 
         <div class="project-details">
           <div class="topic" style="width:100%">Vice President of IE CSE</div>
@@ -215,7 +259,7 @@
         </div>
       </post-card>
 
-      <post-card id="wom" style="display:none; padding:10px;">
+      <post-card id="wom" style="display:none;">
         <div class="project-details">
           <div class="topic" style="width:100%">Launched 'The Spectacular Female' Video Series</div>
           <div class="desc">  This series aims to highlight the achievements and struggles faced by working women.
@@ -250,7 +294,7 @@
       <!-- <post-card id="blog" style="display:none;">
       </post-card> -->
 
-      <post-card id="con" style="display:none; padding:10px;">
+      <post-card id="con" style="display:none;">
           <div id="c2" class="content">
 
           <table style="margin:20px 0px;">
@@ -259,7 +303,8 @@
             </tr>
             <tr>
               <td><img src="img/email.png" width="48" height="48" alt="Email"></td>
-              <td>mehul.raje@gmail.com<br>mehul.smriti@learner.manipal.edu<br>msr@iecsemanipal.com</td>
+              <td><a style="text-decoration:none; color:black;" href="mailto:mehul.raje@gmail.com">mehul.raje@gmail.com</a>
+                  <br><a style="text-decoration:none; color:black;" href="maiilto:mehul.smriti@learner.manipal.edu">mehul.smriti@learner.manipal.edu</a></td>
             </tr>
             <tr>
               <td><img src="img/stamp.png" width="48" height="48" alt="Email"></td>
