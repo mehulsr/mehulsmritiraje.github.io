@@ -34,7 +34,7 @@ text-transform: uppercase;
 }
 .container {
   width: 80%;
-  margin: 50px auto;
+  margin: 180px auto 60px;
   padding: 30px;
 }
 @media (min-width: 481px) {
@@ -128,7 +128,8 @@ text-transform: uppercase;
   padding-top:10px;
 }
 
-#home-link, #proj-link,#pos-link, #wom-link, #con-link, #blog-link
+#home-link, #proj-link,#pos-link, #wom-link, #con-link, #blog-link,
+#home-link-text, #proj-link-text, #pos-link-text, #wom-link-text, #blog-link-text, #con-link-text
 {
   cursor: pointer; cursor: hand;
 }
